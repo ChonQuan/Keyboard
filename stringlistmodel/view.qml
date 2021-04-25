@@ -137,7 +137,7 @@ Item {
             while(spacing < 90) {
                 max = Math.max.apply(Math, listview.filterArray);
                 indexofmax = listview.filterArray.indexOf(max)
-                listview.contentItem.children[indexofmax].width = max/2 + 20
+                listview.contentItem.children[indexofmax].width = max/2
                 listview.filterArray[indexofmax] = listview.contentItem.children[indexofmax].contentWidth
                 listview.lengthOfFilter = listview.filterArray.reduce(function(a,b){return(a+b)},0)
                 console.log(listview.contentItem.children[0].lineCount)
@@ -168,7 +168,7 @@ Item {
                 max = Math.max.apply(Math, listview.filterArray);
                 indexofmax = listview.filterArray.indexOf(max)
                 console.log("max",max,indexofmax)
-                listview.contentItem.children[indexofmax].width = max/2 + 20
+                listview.contentItem.children[indexofmax].width = max/2
                 listview.filterArray[indexofmax] = listview.contentItem.children[indexofmax].contentWidth
                 console.log(listview.filterArray)
                 listview.lengthOfFilter = listview.filterArray.reduce(function(a,b){return(a+b)},0)
@@ -200,7 +200,7 @@ Item {
             while(spacing < range) {
                 max = Math.max.apply(Math, listview.filterArray);
                 indexofmax = listview.filterArray.indexOf(max)
-                listview.contentItem.children[indexofmax].width = max/2 + 20
+                listview.contentItem.children[indexofmax].width = max/2
                 listview.filterArray[indexofmax] = listview.contentItem.children[indexofmax].contentWidth
                 listview.lengthOfFilter = listview.filterArray.reduce(function(a,b){return(a+b)},0)
                 spacing = (1500 - listview.lengthOfFilter - 380)/2
